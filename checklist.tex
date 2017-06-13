@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt,twoside]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{bookman}
+%\usepackage{libertine}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[paper=a4paper,top=1cm,bottom=2cm,right=2cm,left=2cm]{geometry} % margini
+\usepackage{graphicx}
+\usepackage{titlesec}
+
+\renewcommand{\c}{\framebox(9,9){}\ }
+\renewcommand{\r}{\rulespace{Risultato:}}
+\newcommand{\rulespace}[1]{\ \ \textit{\small #1} \hrulefill\par}
+\usepackage{parskip}
+
+\newcommand{\tutto}{
+Sintomi: \hrulefill\par
+\c Controllare cavi inseriti in porta giusta (specialmente VGA)\r
+\c Avvio con tutto scollegato\r
+\c Avvio con periferiche scollegate (anche tastiera)\r
+\c Avvio da CD/DVD \r
+\c Avvio da floppy \r
+\c CMOS reset (togliendo batteria o col jumper) \r
+\c Cambiare impostazioni nel BIOS\r
+\c Test alimentatore\r
+\c Sostituzione alimentatore\r
+\c Sostituzione scheda grafica\r
+\c Sostituzione condensatori\r
+\c Sostituzione altri componenti\r
+\rulespace{Operatore assegnato:}
+}
+
+\begin{document}
+\thispagestyle{empty}
+\tutto
+\vfill
+\tutto
+\end{document}
