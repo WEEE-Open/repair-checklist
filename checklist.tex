@@ -14,6 +14,7 @@
 \newcommand{\rulespace}[1]{\ \ \textit{\small #1} \hrulefill\par}
 \renewcommand{\r}{\rulespace{Risultato:}}
 \renewcommand{\c}{\framebox(9,9){}\, }
+\newcommand{\ci}{\hspace{1cm}\c} % \c indentato
 \usepackage{parskip}
 
 \begin{document}
@@ -48,5 +49,20 @@ Sintomi: \hrulefill\par
 \c Sostituzione condensatori\r
 \c Sostituzione altri componenti\r
 \rulespace{Operatore assegnato:}
-
+{\Large\textsc{Ordinaria amministrazione}}\par
+\c Polvere rimossa\par
+\c Inserito almeno 1 GB di RAM\par
+\c Inserito HDD da almeno 40 GB (o più di uno se sono da meno)\par
+\c Batteria CMOS carica\par
+\c Cambiata pasta termica\par
+\c Xubuntu LTS installato\par
+\ci Partizioni root, home e swap separate\par
+\ci Username \textit{weee}, password \textit{open}\par
+\ci Hostname \textit{pc-nomedelpc}, e.g. il D2 ha hostname \textit{pc-D2}\par
+\ci Spuntato ``scarica aggiornamenti'' e ``installa software di terze parti''\par
+\ci \textit{sudo apt update}, poi \textit{sudo apt upgrade}\par
+\ci VLC installato\par
+\ci Lingua italiana impostata da tool di sistema\par
+\ci Impostare fuso orario \textit{Europe/Rome} da orologio\par
+\ci \textit{timedatectl set-ntp true}\par
 \end{document}
