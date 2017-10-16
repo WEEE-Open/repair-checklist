@@ -9,19 +9,34 @@
 \usepackage[paper=a4paper,top=0.8cm,bottom=1.2cm,right=2cm,left=2cm]{geometry} % margini
 \usepackage{graphicx}
 \usepackage{titlesec}
+\usepackage{framed,wrapfig}
 
-\renewcommand{\c}{\framebox(9,9){}\ }
-\renewcommand{\r}{\rulespace{Risultato:}}
 \newcommand{\rulespace}[1]{\ \ \textit{\small #1} \hrulefill\par}
+\renewcommand{\r}{\rulespace{Risultato:}}
+\renewcommand{\c}{\framebox(9,9){}\, }
 \usepackage{parskip}
 
-\newcommand{\tutto}{
+\begin{document}
+\thispagestyle{empty}
+{\Large\textsc{Riparazione}}\par
+\begin{wrapfigure}{l}{4 cm}
+	\vspace{-0.5cm}
+	\begin{framed}
+		\begin{centering}
+		{\footnotesize Codice inventario\par}
+		\vspace{2.4cm}
+		\end{centering}		
+	\end{framed}
+	\vspace{-1.4cm}
+\end{wrapfigure}
 Sintomi: \hrulefill\par
-\c Controllare cavi inseriti in porta giusta (specialmente VGA)\r
-\c Avvio con tutto scollegato\r
+\hrulefill\par
+\c Controllare cavi inseriti bene\r
+\c Controllare cavo VGA in porta giusta\r
+\c Avvio con interno scollegato\r
 \c Avvio con periferiche scollegate (anche tastiera)\r
-\c Avvio da CD/DVD \r
-\c Avvio da floppy \r
+\c Avvio da CD/DVD\r
+\c Avvio da floppy\r
 \c Avvio con scheda di debugging\r
 \c Avvio senza scheda di debugging\r
 \c CMOS reset (togliendo batteria o col jumper) \r
@@ -29,15 +44,9 @@ Sintomi: \hrulefill\par
 \c Test alimentatore\r
 \c Sostituzione alimentatore\r
 \c Sostituzione scheda grafica\r
-\c Aggiunga/rimozione (se non c'era/c'era) scheda grafica\r
+\c Aggiunta/rimozione (se non c'era/c'era) scheda grafica\r
 \c Sostituzione condensatori\r
 \c Sostituzione altri componenti\r
 \rulespace{Operatore assegnato:}
-}
 
-\begin{document}
-\thispagestyle{empty}
-\tutto
-\vfill
-\tutto
 \end{document}
